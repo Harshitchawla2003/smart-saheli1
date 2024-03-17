@@ -1,0 +1,135 @@
+/* Resetting default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F6BED6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+
+.sidebar {
+    width: 30%;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #E79CC2;
+    border-radius: 10px;
+    margin-right: auto; /* Push sidebar to the left */
+    margin-left: 0; /* Reset default margin */
+    margin-top: 150px;
+}
+
+
+.sidebar h2 {
+    margin-bottom: 10px;
+    color: #1D1B38;
+}
+
+.dropdown {
+    margin-bottom: 20px;
+}
+
+.dropdown label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1D1B38;
+}
+
+.dropdown select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #1D1B38;
+}
+
+.content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #DA0C81;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.course-list {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course-card {
+    width: 48%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.course-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.course-card h3 {
+    color: #1D1B38;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    color: #1D1B38;
+    margin-bottom: 10px;
+}
+
+.course-card button {
+    padding: 10px 20px;
+    background-color: #DA0C81;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.course-card button:hover {
+    background-color: #F6BED6;
+}

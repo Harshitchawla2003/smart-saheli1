@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses</title>
+<link rel="stylesheet" type="text/css" href="courses.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Filter Options</h2>
+      <div class="dropdown">
+        <label for="category">Category:</label>
+        <select id="category">
+          <option value="all">All</option>
+          <option value="programming">Programming</option>
+          <option value="design">Design</option>
+          <option value="business">Business</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+      <div class="dropdown">
+        <label for="pricing">Pricing:</label>
+        <select id="pricing">
+          <option value="all">All</option>
+          <option value="free">Free</option>
+          <option value="paid">Paid</option>
+        </select>
+      </div>
+      <div class="dropdown">
+        <label for="category">Level:</label>
+        <select id="category">
+          <option value="all">All</option>
+          <option value="programming">Beginner</option>
+          <option value="design">Intermediate</option>
+          <option value="business">Advanced</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+      <div class="dropdown">
+        <label for="category">Duration:</label>
+        <select id="category">
+          <option value="all">All</option>
+          <option value="programming">1 hour></option>
+          <option value="design">1-3 hours</option>
+          <option value="business">10 hours+</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+      <!-- Add more dropdowns for duration, level, etc. -->
+    </div>
+    <div class="content">
+      <div class="search-bar">
+        <input type="text" placeholder="Search for courses...">
+        <button>Search</button>
+      </div>
+      <div class="course-list">
+        <!-- Example Placard -->
+        <div class="course-card">
+          <img src="images/gmailcourse.jpg" alt="Course Image">
+          <h3>Course Name</h3>
+          <p>Price: TBD</p>
+          <button>Enroll Now</button>
+        </div>
+        <div class="course-card">
+          <img src="images/computerbasics'.png" alt="Course Image">
+          <h3>Course Name</h3>
+          <p>Price: TBD</p>
+          <button>Enroll Now</button>
+        </div>
+        <div class="course-card">
+            <img src="images/microsoft-training.jpg" alt="Course Image">
+            <h3>Course Name</h3>
+            <p>Price: TBD</p>
+            <button>Enroll Now</button>
+          </div>
+          <div class="course-card">
+            <img src="images/images.png" alt="Course Image">
+            <h3>Course Name</h3>
+            <p>Price: TBD</p>
+            <button>Enroll Now</button>
+          </div>
+        <!-- Repeat the above placard structure for each course -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

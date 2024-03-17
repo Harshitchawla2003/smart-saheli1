@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #FC7FB2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 30px; /* Increased space below the logo */
+    margin-right: 0px;
+  }
+  
+  .logo img {
+    width: 240px; /* Further increased logo size */
+    height: 75px;
+  }
+  
+  .navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    margin-bottom: 20px; /* Increased space between navbar items */
+  }
+  
+  .navbar a {
+    display: flex;
+    align-items: center;
+    color: #060608;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 20px; /* Further increased font size of navbar items */
+  }
+  
+  .navbar a img {
+    margin-right: 20px; /* Increased spacing between icon and text */
+  }
+  
+  .navbar a:hover {
+    color: #fff;
+  }
+  
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .video-container {
+    width: 70%; /* Adjust width as needed */
+    max-width: 600px; /* Limit maximum width */
+    margin-bottom: 20px;
+  }
+  
+  .video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .cta {
+    text-align: center;
+  }
+  
+  .btn {
+    background-color: #FC7FB2;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 15px 30px; /* Increased button size */
+    border-radius: 8px; /* Adjusted button border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button {
+    background-color: #FC7FB2;
+    color: #fff;
+    border: none;
+    padding: 15px 30px; /* Increased button size */
+    border-radius: 8px; /* Adjusted button border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #FF6B9B;
+  }
+
+  /* Add your existing CSS styles here */
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.popup-content {
+    background-color: #FFECEF; /* Background color using the color palette */
+    margin: 10% auto;
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 20px; /* Increased border radius for a rounded appearance */
+    width: 70%; /* Adjust popup width */
+    max-width: 400px; /* Limit maximum width */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+.close {
+    color: #060608; /* Close icon color using the color palette */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #FC7FB2; /* Close icon color on hover using the color palette */
+}
+
+.popup-content h2 {
+    color: #060608; /* Heading color using the color palette */
+    text-align: center;
+    margin-bottom: 20px; /* Increased margin bottom for spacing */
+}
+
+.popup-content form {
+    text-align: center;
+}
+
+.popup-content label {
+    color: #060608; /* Label color using the color palette */
+    font-weight: bold;
+    margin-bottom: 10px; /* Increased margin bottom for spacing */
+    display: block;
+}
+
+.popup-content input[type="text"],
+.popup-content input[type="tel"],
+.popup-content input[type="number"] {
+    width: calc(100% - 20px); /* Adjusted input width for better fit */
+    padding: 10px;
+    margin-bottom: 20px; /* Increased margin bottom for spacing */
+    border-radius: 5px; /* Added border radius for a rounded appearance */
+    border: 1px solid #060608; /* Border color using the color palette */
+}
+
+.popup-content input[type="submit"] {
+    background-color: #FC7FB2; /* Button background color using the color palette */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 12px 20px; /* Increased padding for better appearance */
+    border-radius: 5px; /* Added border radius for a rounded appearance */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup-content input[type="submit"]:hover {
+    background-color: #FF6B9B; /* Button background color on hover using the color palette */
+}

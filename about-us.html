@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<link rel="stylesheet" type="text/css" href="au.css">
+</head>
+<body>
+  <header>
+    <h1>About Us</h1>
+  </header>
+
+  <div class="carousel-container">
+    <div class="carousel-slide">
+      <input type="radio" id="radio1" name="carousel" checked>
+      <input type="radio" id="radio2" name="carousel">
+      <input type="radio" id="radio3" name="carousel">
+      <input type="radio" id="radio4" name="carousel">
+      <input type="radio" id="radio5" name="carousel">
+      <div class="carousel-images">
+        <div class="carousel-image"><img src="images/we2.jpeg" alt="Image 1"></div>
+        <div class="carousel-image"><img src="images/we4.png" alt="Image 2"></div>
+        <div class="carousel-image"><img src="images/we3.jpg" alt="Image 3"></div>
+        <div class="carousel-image"><img src="images/Vanita-Shinde-2.jpg" alt="Image 4"></div>
+        <div class="carousel-image"><img src="images/women-rural_istock.jpg" alt="Image 5"></div>
+      </div>
+      <div class="carousel-navigation">
+        <label for="radio1"></label>
+        <label for="radio2"></label>
+        <label for="radio3"></label>
+        <label for="radio4"></label>
+        <label for="radio5"></label>
+      </div>
+    </div>
+  </div>
+
+  <section class="placards">
+    <div class="placard">
+      <h2>Our Mission</h2>
+      <p>At Smart Saheli, our mission is to empower women by bridging the digital divide and equipping them with the necessary skills to thrive in today's technology-driven world. We believe that every woman deserves equal access to opportunities, regardless of their background or circumstances. Through our initiative, we aim to provide comprehensive digital literacy training and support, enabling women to enhance their knowledge, gain financial independence, and ultimately achieve their full potential.</p>
+    </div>
+    <div class="placard">
+      <h2>Our Vision</h2>
+      <p>Our vision at Smart Saheli is to create a future where women are confident and proficient in navigating the digital landscape, allowing them to pursue diverse career paths and contribute meaningfully to their communities. We envision a world where technology serves as a catalyst for gender equality, where women are empowered to leverage digital tools to enhance their lives and advocate for positive change. Together, we are transforming the digital landscape and paving the way for a more inclusive and equitable future.</p>
+    </div>
+    <div class="placard">
+      <h2>Our Solution</h2>
+      <p>Smart Saheli offers a holistic solution to address the challenges women face in accessing and understanding technology. Through our user-friendly web application, women can access a wide range of resources, including interactive tutorials, workshops, and mentorship programs tailored to their needs and interests. By providing ongoing support and fostering a supportive community, we enable women to develop essential digital skills, build confidence, and unlock new opportunities for personal and professional growth.</p>
+    </div>
+  </section>
+
+  <script>
+    const carouselImages = document.querySelector('.carousel-images');
+    const radioButtons = document.querySelectorAll('input[type="radio"]');
+    let currentIndex = 0;
+
+    function slideImages() {
+      currentIndex++;
+      if (currentIndex === radioButtons.length) {
+        currentIndex = 0;
+      }
+      carouselImages.style.transform = `translateX(-${currentIndex * 100}%)`;
+      radioButtons[currentIndex].checked = true;
+    }
+
+    setInterval(slideImages, 5000); // Change slide every 3 seconds
+  </script>
+</body>
+</html>

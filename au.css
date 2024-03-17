@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background-color: #DA0C81;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    margin-bottom: 20px; /* Add margin to bottom */
+}
+
+
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    position: relative;
+}
+
+.carousel-slide input[type="radio"] {
+    display: none;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 500%; /* Adjusted width for all images */
+}
+
+.carousel-image {
+    flex: 1 0 auto; /* Allow images to grow, but not shrink */
+    min-width: 100%;
+    background-size: contain; /* Ensure full visibility and zoom out */
+    height: 450px;
+}
+
+.img1 { background-image: url('image1.jpg'); }
+.img2 { background-image: url('image2.jpg'); }
+.img3 { background-image: url('image3.jpg'); }
+.img4 { background-image: url('image4.jpg'); }
+.img5 { background-image: url('image5.jpg'); }
+
+.carousel-navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.carousel-navigation label {
+    display: inline-block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.placards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.placard {
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #E79CC2;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.placard h2 {
+    color: #DA0C81;
+    margin-top: 0;
+}
+
+.placard p {
+    color: #1D1B38;
+}

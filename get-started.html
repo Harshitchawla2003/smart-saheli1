@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Saheli</title>
+
+<!-- Add favicon -->
+<link rel="icon" type="image/png" href="images/saheli (1).jpg">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo">
+        <img src="images/Screenshot 2024-03-17 031200.png" alt="Logo">
+      </div>
+      <ul class="navbar">
+        <li><a href="get-started.html"><i class="ri-home-fill"></i>Home</a></li>
+        <li><a href="schemes.html"><i class="ri-search-fill"></i>Schemes</a></li>
+        <li><a href="courses.html"><i class="ri-presentation-fill"></i>Courses</a></li>
+        <li><a href="about-us.html"><i class="ri-team-line"></i>About Us</a></li>
+        <li><a href="connect-with-saheli.html"><i class="ri-user-fill"></i>Connect with Saheli</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="video-container">
+        <video class="video" autoplay loop muted>
+          <source src="images/tutorial.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="cta">
+        <button class="btn" onclick="openPopup()">Sign in/Sign up to see your courses</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup Form -->
+  <div id="popupForm" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>Sign In / Sign Up</h2>
+      <form id="signupForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" pattern="[A-Za-z ]+" title="Only letters allowed" required><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required><br>
+        <button class="btn" onclick="sendOTP()">Generate OTP</button><br><br>
+        <label for="otp">OTP:</label><br>
+        <input type="number" id="otp" name="otp" required><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-auth.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
